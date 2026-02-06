@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ff4d88;
+}
+
+.section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 95%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #ff4d88;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+input {
+  padding: 12px;
+  border-radius: 20px;
+  border: 2px solid #ff4d88;
+  width: 80%;
+}
+
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 22px;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+.card {
+  width: 60px;
+  height: 60px;
+  background: #ffd6e8;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#catchArea {
+  position: relative;
+  height: 250px;
+  background: #ffe6f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#basket {
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}

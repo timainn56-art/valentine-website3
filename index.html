@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentines Day 💖</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body onclick="startMusic()">
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<h1>Happy Valentine’s Day baby! 💖</h1>
+<p>Tap anywhere to start music 💕</p>
+
+<div class="section">
+  <h2>💘 Click the Heart</h2>
+  <p>Score: <span id="clickScore">0</span></p>
+  <button onclick="clickHeart()">💖</button>
+</div>
+
+<div class="section">
+  <h2>🧠 Memory Match</h2>
+  <div id="memoryBoard"></div>
+  <p id="memoryMessage"></p>
+</div>
+
+<div class="section">
+  <h2>💬 Love Quiz</h2>
+  <h2>Who loves more?</h2>
+  <button onclick="quiz()">You</button>
+  <button onclick="quiz()">Me</button>
+  <p id="quizResult"></p>
+</div>
+
+<div class="section">
+  <h2>💗 Catch the Hearts</h2>
+  <p>Score: <span id="catchScore">0</span></p>
+  <div id="catchArea">
+    <div id="basket">🧺</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>⌨️ Love Typer</h2>
+  <p>Type: <b>I love you</b></p>
+  <input id="typeInput" oninput="typeCheck()">
+  <p id="typeResult"></p>
+</div>
+
+<div class="section">
+  <h2>💌 My Letter</h2>
+  <p>
+    I love you Clara. You are so special to me, you treat me like no one ever before. Everytime we talk i feel my heart skip a beat. You are always here for me when im passing through hard times, you are beautiful, understanding, funny. You're a perfect woman. You're everything i couldve asked for. I LOVE UUUU AND IM DREAMING OF MEETING YOU IN PERSON.
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
